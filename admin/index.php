@@ -1,5 +1,5 @@
-<html>
-<?php include('includes/nav.php');
+
+<?php 
 
     $sql = "SELECT count(*) FROM admin";
     $stmt = $pdo->prepare($sql);
@@ -21,7 +21,9 @@
     $stmt4->execute();
     $earning = $stmt4->fetch(PDO::FETCH_NUM);
 
+    include('includes/nav.php');
 ?>
+<html>
 <body>
     <section class="dashboard">
     <div class="d-flex justify-content-center text-center mt-5">
