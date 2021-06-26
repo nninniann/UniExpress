@@ -2,7 +2,7 @@
     session_start();
     if(!isset($_SESSION['redirect'])) {
         $_SESSION['not_login'] = "Please login to access admin panel";
-        header("Location: admin_login.php");
+        echo "<script>window.location.assign('admin_login.php')</script>";
         return;
     }
 ?>

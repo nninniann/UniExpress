@@ -42,8 +42,7 @@ if(!$mail->send()) {
     echo "Message has been sent successfully";
 }
 
- header('Location: index.php');
- return;
-
+header('Location: index.php');
+return;
 }
 ?>

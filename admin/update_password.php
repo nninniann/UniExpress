@@ -88,7 +88,7 @@ if (isset($_GET['id'])) {
             <button type="submit" name="new_submit" class="btn btn-dark mt-4 mb-4 me-2 ps-5 pe-5">Submit</button>
         </div>
         </form>
-    <</div>
+    </div>
         </section>
         </section>
         </section>
