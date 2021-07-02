@@ -1,0 +1,42 @@
+SQL script
+
+CREATE TABLE admin(
+  adminID INT UNSIGNED NOT NULL AUTO_INCREMENT, 
+  admin_name VARCHAR(255), 
+admin_email VARCHAR(255),
+admin_password VARCHAR(255),
+  PRIMARY KEY(adminID),
+);
+
+CREATE TABLE customer(
+  customerID INT UNSIGNED NOT NULL AUTO_INCREMENT, 
+  cust_name VARCHAR(255), 
+cust_email VARCHAR(255),
+cust_password VARCHAR(255),
+cust_address VARCHAR(255),
+cust_phone VARCHAR(255),
+  PRIMARY KEY(customerID),
+);
+
+CREATE TABLE food(
+  foodID INT UNSIGNED NOT NULL AUTO_INCREMENT, 
+  food_name VARCHAR(255), 
+food_description VARCHAR(255),
+food_price VARCHAR(255),
+food_image VARCHAR(255),
+  PRIMARY KEY(foodID),
+);
+
+CREATE TABLE food_order (
+  orderID INT NOT NULL AUTO_INCREMENT, 
+  foodID INTEGER, 
+order_date DATETIME,
+quantity INTEGER,
+order_status VARCHAR(255),
+customerID INTEGER ,
+order_price DECIMAL(10,2),
+PRIMARY KEY(orderID),
+FOREIGN KEY (foodID) REFERENCES food(foodID),
+FOREIGN KEY (customerID) REFERENCES customer(customerID)
+
+);
