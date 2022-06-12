@@ -1,6 +1,4 @@
-# midlights-management-system 🍔🍟🍕🌭🍗
-Web Project for SSE3150 using PHP, MySQL, HTML, CSS and Javascript, JSON, jQuery<br>
-To apply our valuable knowledge gained during class🤓
+# UniExpress 🍔🍟🍕🌭🍗
 
 ## Features😋
 ### Customer Site
